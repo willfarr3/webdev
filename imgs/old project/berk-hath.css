@@ -1,0 +1,44 @@
+.address {
+    /* margin: top right bottom left; */
+    /* margin: top/bottom left/right; */
+    /* margin: top/bottom/left/right; */
+    margin: 5px 0;
+    color: navy; 
+    text-align: center;
+    font-weight: bold;
+/* border: 2px solid black; */
+} 
+.top-line {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.first-letter {
+    font-size: 18px;
+}
+
+.inc {
+    font-size: 14x;
+}
+
+.mid-line {
+    font-size: 12px;
+}
+
+.bot line {
+    margin-bottom: 20px;
+}
+
+.left-list {
+}
+.right-list
+{}
+
+.geico {
+    color: navy;
+}
+.end-words {
+  font-size: smaller;  color: navy;
+}
+.section-2 {
+    
+}
