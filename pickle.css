@@ -11,11 +11,11 @@ body {
 }
 .where {
     text-align: center;
-    color: red;
+    color: purple;
     font-size: xx-large;
 }
 .end {
-    color: red;
+    color: purple;
     text-align: center;
     margin: auto;
 }
