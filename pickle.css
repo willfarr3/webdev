@@ -1,3 +1,23 @@
+body {
+    background-color: red;
+}
 .title {
     text-align: center;
 }
+
+.description {
+  text-align: center;
+  background-color: red;
+}
+.where {
+    text-align: center;
+    color: red;
+    font-size: xx-large;
+}
+.end {
+    color: red;
+    text-align: center;
+    margin: auto;
+}
+
+/* margin: 0 auto centers text on screen */
