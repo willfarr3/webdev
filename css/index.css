@@ -1,0 +1,17 @@
+.link {
+    border: 2px solid chartreuse;
+    color: chartreuse;
+}
+/* .title {
+    color: chartreuse;
+    border: 5px solid chartreuse; */
+
+.header {
+    color: chartreuse;
+    border: 5px solid chartreuse;
+}
+.footer {
+    color: rebeccapurple;
+    border: 5px solid rebeccapurple;
+    justify-content: end;
+}
