@@ -1,9 +1,9 @@
 body {
     background-color: aqua;
 }
-.link {
-    border: 2px solid chartreuse;
+.nav {
     color: chartreuse;
+    background-color: red;
 }
 /* .title {
     color: chartreuse;
@@ -20,5 +20,5 @@ body {
     justify-content: end;
 }
 .link:hover {
-        color: red;
+        color: whitesmoke;
 }
