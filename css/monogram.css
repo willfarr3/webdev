@@ -111,5 +111,6 @@ footer {
 }
 .footer-col {
     width: 50%;
+    margin: .5em 0;
 }
 
