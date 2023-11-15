@@ -30,6 +30,7 @@ let userscore = 0
 resetBtn.addEventListener('click', () => {
     userImg.src = "../imgs/rps_imgs/rps4.png" 
     compImg.src = "../imgs/rps_imgs/rps4.png"
+    results.innertext=('start game')
 })
 
 
@@ -73,7 +74,6 @@ function winlose(userChoice) {
         results.innerText = 'that sounds like a skill issue'}
     else if (userChoice == "paper"  && comp == "scissors"){
         results.innerText = 'that sounds like a skill issue'}
-
     else if (comp == "rock"  && user == "paper"){
         results.innerText = 'pure luck'}
     else if (comp == "scissors"  && user == "rock"){
