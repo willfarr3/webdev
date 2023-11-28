@@ -1,8 +1,39 @@
 body {
     background-color: #00c1b5;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.img {
-height: 20px;
-width: 20px;
+img {
+height: 550px;
+width: 550;
+display:block;
+margin-top: 100px;
+}
+
+
+.issue {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-size-adjust: 10px;
+}
+.buy {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+.stores {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+   font-size: 15px;
+}
+.start {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
 }
