@@ -15,24 +15,28 @@ margin-top: 100px;
 
 
 .issue {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
     text-size-adjust: 10px;
 }
 .buy {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
     color: white;
 }
 .stores {
+    font-family: 'Roboto', sans-serif;
     color: white;
     text-align: center;
     text-transform: uppercase;
    font-size: 15px;
 }
 .start {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     text-transform: uppercase;
     font-size: 15px;
