@@ -1,6 +1,8 @@
 const subBtn = document.getElementById('submit')
-const results = document.querySelector('results')
+const text = document.querySelector('text')
+const email = document.querySelector('email')
 
 subBtn.addEventListener('click', () =>{
-    results.innertext=('email given')
+    email.innerText=
+    ('email given')
 })
