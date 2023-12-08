@@ -26,3 +26,34 @@ body {
 .link:hover {
         color: whitesmoke;
 }
+
+main{
+    height: 72vh;
+}
+form {
+    width: 90%;
+    margin: 3em auto;
+}
+label {
+    display: block;
+}
+
+.start {
+    text-align: center;
+    font-size:  larger;
+    font-weight: bold;
+}
+
+.sub {
+    text-align: center;
+}
+
+.address1 {
+    font-size: small;
+    color: red;
+}
+
+.right {
+    text-align: right;
+   justify-content: flex-start;
+}
