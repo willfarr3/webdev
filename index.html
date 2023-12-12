@@ -27,12 +27,10 @@
     <p class="sub">please complete the form below to apply for a job with us</p>
     <hr>
     <form action="">
-        <label for="full name">name</label>
+        <label for="full name">FULL NAME</label>
         <input type="text" placeholder="Full name">
-        <label for="time">Time</label>
-        <input type="time" id="time" value="11:30">
-        <label for="email">enter your email</label>
-        <input type="text" id="email">
+        <!-- <label for="time">Time</label>
+        <input type="time" id="time" value="11:30"> -->
         <!-- <label for="ssn">enter your social security number</label>
         <input type="ssn" id="ssn"> -->
         <label for="address">current address</label>
@@ -40,12 +38,71 @@
         <label for="address">street address</label>
         <input type="text" id="address">
         <label for="address">street address line 2</label>
-    <input type="text" id="city">
+    <div class="sideways">
+        <input type="text" id="city">
         <label for="city">City</label>
-    <input type="text" id="state/province">
-     <label for="state/province">State/province</label>
-        
+        <input type="text" id="state/province">
+        <label for="state/province">State/province</label>
+    </div>
+    <div class="sideways">
+        <input type="text" id="postal/zip code">
+        <label for="postal/zip code">postal/zip code</label>
+       <form>
+            <label for="country">country:</label>
+            <select name="country" id="country">
+            <option value=""></option>
+                <option value="tonga">tonga</option>
+                <option value="finland">finland</option>
+                <option value="burkina faso">burkina faso</option>
+                <option value="mongolia">mongolia</option>
+                <option value="china">china</option>
+            </select>
+       </form>
+    </div>
+<div class="sideways">
+    <label for="email">email address</label>
+    <input type="text" id="email" placeholder="ex:email@gmail.com">
+</div>
+<div class="sideways">
+    <label class="phone" for="phone number">phone number</label>
+    <input type="text" id="area code">
+    <div class="straight">
+        <label for="area code">area code</label>
+    </div>
+    <input type="text" id="number">
+    <div class="straight">
+        <label for="number">number</label>
+    </div>
+</div>
+<div class="sideways">
+    <label for="job">APPLYING FOR POSITION</label>
+    <select name="job" id="job">
+        <option value=""></option>
+        <option value="girl scout">girl scout</option>
+        <option value="bear tamer">bear tamer</option>
+        <option value="dwayne the rock johnson">dwayne the rock johnson</option>
+        <option value="eugene the pebble jackson">eugene the pebble jackson</option>
+        <option value="money launderer">money launderer</option>
+        <option value="accountant">accountant :[</option>
+    </select>
+</div>
+<div class="sideways">
+    <label for="start date">start date</label>
+    <input type="date" id="start date">
+</div>
+<div class="sideways">
+    <label for="upload resume">UPLOAD RESUME</label>
+    <button type="submit" id="upload">select file</button>
+</div>
 
+<!-- photo -->
+<div></div>
+
+
+<div class="sideways">
+    <input type="checkbox" id="checkbox">
+    <label for="terms">do you accept the terms and conditions</label>
+</div>
 
     </form>
 </main>

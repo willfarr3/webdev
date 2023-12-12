@@ -57,3 +57,15 @@ label {
     text-align: right;
    justify-content: flex-start;
 }
+.sideways {
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+}
+
+.phone {
+    font-weight: bolder;
+}
+.straight {
+    display: block;
+}
