@@ -41,11 +41,12 @@ label {
 .start {
     text-align: center;
     font-size:  larger;
-    font-weight: bold;
+    font-weight:bolder;
 }
 
 .sub {
     text-align: center;
+    font-weight: bold;
 }
 
 .address1 {
@@ -69,3 +70,4 @@ label {
 .straight {
     display: block;
 }
+
