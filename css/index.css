@@ -71,3 +71,33 @@ label {
     display: block;
 }
 
+main {
+    height: 72vh;
+}
+
+.card {
+    /* position: sticky; */
+    position: absolute;
+    top: 20px;
+    right: 2vw;
+    /* left: 5%;   */
+    height: 50px;
+    width: 50px;
+    background-color: chartreuse;
+    box-shadow: 3px 3px 5px  0 rgb(0, 0, 0, 1);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top {
+    position: relative;
+    height: 200px;
+    width: 400px;
+    background-color: chartreuse;
+}
+.bottom {
+    height: 200px;
+    width: 400px;
+    background-color: chartreuse;
+}
