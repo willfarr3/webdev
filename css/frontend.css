@@ -1,3 +1,17 @@
-img {
-   border-image-width: 200px;
+.card {
+   height: 500px;
+   width: 500px;
+   background-image: url("/imgs/backround.svg");
+}
+
+.inner-card {
+   font-family: sans-serif;
+   font-weight: bolder;
+height: 100px;
+width: 100px;
+background-color: white;
+border-radius: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
