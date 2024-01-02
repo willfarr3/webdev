@@ -1,17 +1,38 @@
+body {
+   background-color: palevioletred;
+}
+
+
+
 .card {
    height: 500px;
    width: 500px;
-   background-image: url("/imgs/backround.svg");
+   background-color: palevioletred;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   height: 500px;
+   width: 400px;
+   text-decoration-color: white;
+   background-color: white;
+   border-radius: 20px;
 }
 
 .inner-card {
    font-family: sans-serif;
    font-weight: bolder;
-height: 100px;
-width: 100px;
-background-color: white;
-border-radius: 20px;
-display: flex;
-justify-content: center;
-align-items: center;
+   /* height: fit-content;
+   width: fit-content;
+   background-color: white;
+   border-radius: 20px; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.side-heading {
+   font-weight: lighter;
+   color: grey;
 }
