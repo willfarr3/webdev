@@ -33,6 +33,18 @@ body {
 }
 
 .side-heading {
+   display: none;
    font-weight: lighter;
    color: grey;
+}
+
+@media (max-width: 1020px) {
+   header {
+      height: 250px;
+      width: 250px;
+   }
+}
+
+.link {
+   /* display: none; */
 }
