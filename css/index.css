@@ -27,9 +27,9 @@ body {
         color: whitesmoke;
 }
 
-main{
-    height: 72vh;
-}
+/* ################################ */
+/* ########    FORM    ############ */
+/* ################################ */
 form {
     width: 90%;
     margin: 3em auto;
@@ -71,17 +71,14 @@ label {
     display: block;
 }
 
-main {
-    height: 72vh;
-}
 
-.card {
+/* .card {
     /* position: sticky; */
-    position: absolute;
-    top: 20px;
-    right: 2vw;
+    /* position: absolute; */
+    /* top: 20px; */
+   
     /* left: 5%;   */
-    height: 50px;
+    /* height: 50px;
     width: 50px;
     background-color: chartreuse;
     box-shadow: 3px 3px 5px  0 rgb(0, 0, 0, 1);
@@ -89,15 +86,103 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.top {
+} */ 
+/* .top {
     position: relative;
     height: 200px;
-    width: 400px;
+     width: 400px; 
     background-color: chartreuse;
 }
 .bottom {
     height: 200px;
-    width: 400px;
+     width: 400px; 
     background-color: chartreuse;
+} */
+.midterm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+}
+.card {
+    display: flex;
+    justify-content: column;
+    align-items: column;
+    flex-direction: column;
+}
+.top-card {
+    /* position: absolute; */
+    /* right: 550px; */
+    /* height: 300px; */
+    width: 350px;
+    background-color: white;
+    border-radius: 20px;
+    
+    box-shadow: 5px 5px 5px 5 rgb(#ea5353, #ea5353,#ea5353);
+    
+}
+
+.left-card{
+    /* position: absolute; */
+    /* align-self: left; */
+    /* left: 70px;
+    bottom: 150px; */
+    /* height: 300px; */
+    width: 300px;
+    border-radius: 20px;
+   
+    background-color: blue;
+}
+
+.right-card {
+    /* position: absolute; */
+    /* right: 30px;
+    bottom: 150px; */
+    /* height: 300px; */
+    width: 350px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    
+}
+
+.bottom-card {
+    /* position: absolute; */
+    /* top: 750px;
+    left: 500px; */
+    /* height: 300px; */
+    width: 350px;
+    background-color: rgb(170, 170, 7);
+    border-radius: 20px;
+   
+}
+.middle-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.right-box {
+display: flex;
+justify-content: right;
+align-items: center;
+}
+
+.side-header {
+    font-weight: lighter;
+    color: lightgray;
+}
+
+.sup-img {
+    height: 50px;
+    width: 50px;
+}
+.box-head-2 {
+    font-weight: bolder
 }
