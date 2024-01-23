@@ -11,50 +11,100 @@
     <title>hurgablurgablug</title>
 </head>
 <body>
-    <header class="header">
-        <h1 class="title"><i class="fa-solid fa-fish-fins"></i></i> WEBING SITE</h1>
-            <ul class="nav">
-                <button class="hamburger-button">
-                    <i class="fa-solid fa-list"></i>
-                </button>
-                <li class="link"><a href="https://willfarr3.github.io/webdev/">Home</a></li>
-                <li class="link"><a href="html/frontend-project.html">frontend-project</a></li>
-                <li class="link"><a href= "html/strawberry.html">strawberry</a></li>
-                <li class="link"><a href= "html/rps.html">ROCK PAPER SCISSORS</a></li>
-                <li class="link"><a href="/html/frontend.html">frontend clone</a></li>
-            </ul>
-    </header>
+    <section class="job-app">
+        <p class="start">Job Application</p>
+        <p class="sub">please complete the form below to apply for a job with us</p>
+        <hr>
+        <form action="">
+            <label for="full name">FULL NAME</label>
+            <input type="text" placeholder="Full name"> 
+            <label for="time">Time</label>
+            <input type="time" id="time" value="11:30"> 
+            <label for="ssn">enter your social security number</label>
+            <input type="ssn" id="ssn"> 
+            <label for="address">current address</label>
+            <input type="text" id="address">
+            <label for="address">street address</label>
+            <input type="text" id="address">
+            <label for="address">street address line 2</label>
 
-
-
-
-
-
-
-
-    
-
-    
-    <div>
-        <img src="/imgs/backround.svg" alt="">
-    </div>
-    <div class="card">
-        <p class="inner-card"> <img src="/imgs/icon-star.svg" alt="">FAQ</p>
-        <p id='first-btn' class="inner-card">what is frontend mentor and how will it help me <img id="plus-btn" src="/imgs/icon-plus.svg" alt=""><img id="minus-btn" src="/imgs/icon-minus.svg" alt=""></p>
-        <p class="side-heading">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building. </p>
-        
-        <div>
-            <p id="second-btn" class="inner-card"> Is Frontend Mentor Free? <img id="plus-btn" src="/imgs/icon-plus.svg" alt=""> <img id="minus-btn" src="/imgs/icon-minus.svg" alt=""></p>
-            <p class="side-heading">Yes, Frontend Mentor offers both free and premium coding challenges, with the free option providing access to a range of projects suitable for all skill levels.</p>
+            <div class="sideways">
+                <input type="text" id="city">
+                <label for="city">City</label>
+                <input type="text" id="state/province">
+                <label for="state/province">State/province</label>
             </div>
-        <div class="sec-drop"> <p id="third-btn" class="inner-card"> Can I use Frontend Mentor Projects in my Portfolio? <img id="plus-btn" src="/imgs/icon-plus.svg" alt=""> <img id="minus-btn" src="/imgs/icon-minus.svg" alt=""></p>
-            <p class="side-heading">Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent way to showcase your skills to potential employers! </p>
-        </div> 
-        <div><p id="fourth-btn" class="inner-card">How can i get help if i'm stuck on a challenge <img id="plus-btn" src="/imgs/icon-plus.svg" alt=""> <img id="plus-btn" src="/imgs/icon-minus.svg" alt=""></p>
-            <p class="side-heading">The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members.</p>
+
+            <div class="sideways">
+                <input type="text" id="postal/zip code">
+                <label for="postal/zip code">postal/zip code</label>
+            </div>
+        </form>
+        <form>
+            <label for="country">country:</label>
+            <select name="country" id="country">
+                <option value=""></option>
+                <option value="tonga">tonga</option>
+                <option value="finland">finland</option>
+                <option value="burkina faso">burkina faso</option>
+                <option value="mongolia">mongolia</option>
+                <option value="china">china</option>
+            </select>
+        </form>
+        <div class="sideways">
+            <label for="email">Email address</label>
+            <input type="text" id="email" placeholder="ex:email@gmail.com">
         </div>
-    </div>
-    
+        <div class="sideways">
+            <label class="phone" for="phone number">phone number</label>
+            <input type="text" id="area code">
+            <div class="straight">
+                <label for="area code">area code</label>
+            </div>
+            <input type="text" id="number">
+            <div class="straight">
+                <label for="number">number</label>
+            </div>
+        </div>
+        <div class="sideways">
+            <label for="job">APPLYING FOR POSITION</label>
+            <select name="job" id="job">
+                <option value=""></option>
+                <option value="girl scout">girl scout</option>
+                <option value="bear tamer">bear tamer</option>
+                <option value="dwayne the rock johnson">dwayne the rock johnson</option>
+                <option value="eugene the pebble jackson">eugene the pebble jackson</option>
+                <option value="money launderer">money launderer</option>
+                <option value="accountant">accountant :[</option>
+            </select>
+        </div>
+        <!-- start date -->
+        <div class="sideways">
+            <label for="start date">start date</label>
+            <input type="date" id="start date">
+        </div>
+
+        <div class="sidewys">
+            <label for="upload resume">UPLOAD RESUME</label>
+            <input type="file" id="upload resume">
+        </div>
+
+        <!-- photo-->
+        <div class="sideways">
+        <label for="photo">TAKE PHOTO</label>
+        <input type="file" id="photo">
+        </div> 
+
+        <!-- checkbox -->
+        <div class="sideways">
+            <input type="checkbox" id="checkbox">
+            <label for="terms">do you accept the terms and conditions</label>
+        </div>
+
+        <div>
+            <button type="submit" id="submit" class="submit">submit</button>
+        </div>
+    </section>
 
 
     <script src="/js/replica.js"></script>
