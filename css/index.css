@@ -1,4 +1,5 @@
 body {
+   
     background-color: aqua;
 }
 .nav {
@@ -117,6 +118,8 @@ label {
     flex-direction: column;
 }
 .top-card {
+    max-width: 1440px;
+    min-width: 375px;
     /* position: absolute; */
     /* right: 550px; */
     /* height: 300px; */
@@ -129,6 +132,8 @@ label {
 }
 
 .left-card{
+    max-width: 1440px;
+    min-width: 375px;
     /* position: absolute; */
     /* align-self: left; */
     /* left: 70px;
@@ -141,6 +146,8 @@ label {
 }
 
 .right-card {
+    max-width: 1440px;
+    min-width: 375px;
     /* position: absolute; */
     /* right: 30px;
     bottom: 150px; */
@@ -152,6 +159,8 @@ label {
 }
 
 .bottom-card {
+    max-width: 1440px;
+    min-width: 375px;
     /* position: absolute; */
     /* top: 750px;
     left: 500px; */
@@ -162,6 +171,8 @@ label {
    
 }
 .middle-cards {
+    max-width: 1440px;
+    min-width: 375px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,6 +180,8 @@ label {
 
 }
 .right-box {
+    max-width: 1440px;
+    min-width: 375px;
 display: flex;
 justify-content: right;
 align-items: center;
@@ -199,6 +212,8 @@ align-items: center;
     width: fit-content;
     height: fit-content;
     background-color: white;
+    max-width: 1440px;
+    min-width: 375px;
 }
 
 .purple-box {
@@ -209,13 +224,20 @@ align-items: center;
     border-radius: 20px;
     color: white;
     background-color:purple;
+    max-width: 1440px;
+    min-width: 375px;
 }
 .main-box {
+    font: poppins;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    min-width: 375px;
 }
 .terms {
-    color: lightgray;
+    color: gray;
     font-weight: lighter;
 }
 .button {
@@ -223,4 +245,10 @@ align-items: center;
     color: white;
     border-radius: 5px;
     background-color: hsl(154, 59%, 51%);
+}
+.side-words {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
