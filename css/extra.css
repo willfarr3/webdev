@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    
+    .box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin: 1rem 0;
+    /* transform: translateX(500px); */
+    }
+    /* problem 2 */
+    .box1 {
+    background-color: red;
+     transition: all 2s ease-in /*, color 2s ease-in-out*/; 
+    }
+    /* + box2 */
+    /* problem 3 */
+    .box1:hover {
+        background-color: greenyellow;
+        color:purple;
+        transform: scale(1,1);
+        transform:skew(width 150px) ;
+        left: 150px;
+       transition: left 5s ease;
+    }
+
+    .box2 {
+    background-color: green;
+    transition:all .5s ease-in;
+    } 
+
+    .box3 {
+    background-color: yellow;
+    }
+    /* problem 4 */
+    .box4 {
+    background-color: blue;
+    }
