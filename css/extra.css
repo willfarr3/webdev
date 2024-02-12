@@ -203,15 +203,57 @@ height: 20px;
     }
     } 
 
+.pac-man {
+  width: 200px;
+  height: 200px;
 
+}
 
 
 .half-circle {
   width: 200px;
-  height: 200px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: yellow;
   border-radius: 100px 100px 0 0;
+  animation:open1 alternate 500ms infinite ease-in-out;
+}
+
+.eye {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50px;
+  animation:open1 alternate 500ms infinite ease-in-out;
+
+}
+.half-2 {
+  width: 200;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: yellow;
+  border-radius: 0 0 100px 100px;
+  animation:open2 alternate 500ms infinite ease-in-out;
+}
+
+@keyframes open1{
+  from{
+transform: rotateZ(-40deg);
+  }
+  to{
+transform: rotateZ(0deg);
+  }
+}
+
+@keyframes open2{
+  from{
+transform: rotateZ(40deg);
+  }
+  to{
+transform: rotateZ(0deg);
+  }
 }
