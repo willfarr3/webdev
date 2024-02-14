@@ -1,6 +1,6 @@
 .header {
    border: 2px solid black;
-   
+   display: flex;
 }
 .brand {
     font-weight: 900;
@@ -9,4 +9,40 @@
 .slogan {
     font-weight: 900;
     font-size: 50px;
+}
+
+.careers {
+    margin-right: 15px;
+}
+.about {
+    margin-right: 500px;
+}
+.register {
+    height: 25px;
+    width: 60px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.right-side {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    border-radius: 10px;
+    background-color: black;
+}
+.button-text {
+    color: white;
+}
+
+.elmo {
+    margin-left: 500px;
+    height: 400px;
+    display: flex;
+    justify-content:right;
+    align-items:end ;
+}
+.login {
+    margin-right: 20px;
 }
