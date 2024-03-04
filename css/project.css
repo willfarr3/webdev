@@ -1,8 +1,9 @@
 body {
-    max-width:1500px ;
     max-height: 1500px;
-    /* margin: 1500px; */
+    margin: 10px;
     height: 1400px;
+    max-width: 1000px;
+    width: 90%;
 }
 
 
@@ -116,10 +117,9 @@ body {
     align-items: center;
     cursor: crosshair;
 }
-.login {
+/* .login {
     /* margin-right: 20px; */
-   
-}
+/* } */
 .login:hover {
     color: grey;
     cursor: pointer;
