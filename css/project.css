@@ -1,7 +1,7 @@
 body {
     max-height: 1500px;
     margin: 10px;
-    height: 1400px;
+    height: 100px;
     max-width: 1000px;
     width: 90%;
 }
@@ -12,12 +12,14 @@ body {
    display: flex;
    height: 30px;
    width: 100%;
+   max-width: 1000px;
    margin-bottom: 50px;
 }
 .permanent-marker-regular {
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
     font-style: normal;
+    max-width: 1000px;
   }
 
 
@@ -29,11 +31,13 @@ body {
 
 .brand {
   margin-right: 10px;
+  max-width: 1000px;
 }
 .slogan {
     font-weight: 900;
     font-size: 50px;
     width: 350px;
+    max-width: 1000px;
     font-family: Impact,  'Arial Narrow Bold', sans-serif;
 }
 
@@ -106,6 +110,7 @@ body {
 .image {
     margin-left: 500px;
     height: 400px;
+    max-width: 1000px;
     display: flex;
     justify-content:right;
     align-items:end ;
