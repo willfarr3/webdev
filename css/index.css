@@ -38,6 +38,42 @@ form {
 label {
     display: block;
 }
+.wheather {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row;
+    padding: .5rem .75rem;
+    background-color: blue;
+    align-items: center;
+    border-radius: 20px;
+    width: 350px;
+}
+
+.place {
+   margin-right: 10px;
+}
+.date {
+    margin-right: 15px;
+}
+.icon {
+    
+}
+
+.right-side {
+    
+    
+}
+
+
+.joke-button {
+    cursor: pointer;
+    padding: .5rem .75rem;
+    background-color: #ea5353;
+    width: 30px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-bottom: 10rem;
+}
 
 .start {
     text-align: center;

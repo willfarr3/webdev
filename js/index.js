@@ -1,22 +1,33 @@
-const stockPrice = document.querySelector(".output")
-const url = 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/v2/get-quotes?region=US&symbols=AMD%2CIBM%2CAAPL';
+const theJoke = document.querySelector(".output")
+const temp = document.querySelector(".temp")
+
+const jokeButton = document.querySelector(".joke-button")
+const url = 'https://dad-jokes-by-api-ninjas.p.rapidapi.com/v1/dadjokes';
 const options = {
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Key': '83aa7e4915msha45fa05c01ec122p187bfajsn2e1e98827135',
-		'X-RapidAPI-Host': 'apidojo-yahoo-finance-v1.p.rapidapi.com'
+		'X-RapidAPI-Host': 'dad-jokes-by-api-ninjas.p.rapidapi.com'
 	}
 };
 
+async function getJoke() {
+    
 
-async function getPrice() {
-    try {
-        const response = await fetch(url, options);
-        const result = await response.json();
-        console.log(result.symbol);
-    } catch (error) {
-        console.error(error);
-    }
+try {
+	const response = await fetch(url, options);
+	const result = await response.json();
+	const joke = result[0].joke;
+    theJoke.textContent = joke
+} catch (error) {
+    joke.textContent = "erm actually..."
+	console.error(error);
+}
 }
 
-getPrice()
+jokeButton.addEventListener('click', () =>{
+    getJoke()
+})
+
+
+https:api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
