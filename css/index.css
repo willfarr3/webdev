@@ -52,11 +52,28 @@ label {
 .place {
    margin-right: 10px;
 }
+
+.div1 {
+    display: flex;
+    flex-direction: column;
+}
 .date {
     margin-right: 15px;
 }
 .icon {
     
+}
+
+.type {
+
+}
+
+.temp {
+
+}
+
+.time {
+
 }
 
 .right-side {
