@@ -1,8 +1,9 @@
 const theJoke = document.querySelector(".output")
 const temp = document.querySelector(".temp")
+const currentCondition = document.querySelector(".type")
+// const geoKey = document.querySelector("myprojects.geoapify.com/api/geoKey/keys")
 
- "900b4b96ca474c8b59bd9bb846c16ba7"
-
+ "2328c9ca79f34a98a61969796f0345b3"
 const jokeButton = document.querySelector(".joke-button")
 const url = 'https://dad-jokes-by-api-ninjas.p.rapidapi.com/v1/dadjokes';
 const options = {
@@ -12,6 +13,44 @@ const options = {
 		'X-RapidAPI-Host': 'dad-jokes-by-api-ninjas.p.rapidapi.com'
 	}
 };
+
+const clouds = ['few clouds','scattered clouds','broken clouds','overcast clouds']
+const rain = ['shower rain','rain','mist']
+url=`https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={ "900b4b96ca474c8b59bd9bb846c16ba7"}`
+let img 
+
+async function getWeather() {
+	try{
+		const response = await fetch(url)
+		const data = await response.json()
+		currentTemp.textContent = Math.round(data.main.temp)
+		let condition = data.wheather[0].description 
+		console.log(condition)
+		currentCondition.textContent = condition 
+
+		if (clouds.includes(condition)) {
+				img = 'partly-cloudy.png'
+		}
+		else if (rain.includes(condition)) {
+			img = 'rain.png'
+		}
+		else if (condition == 'thunderstorm') {
+			img = 'rain-storm.png'
+		}
+		else if (condition == 'snow') {
+			img = 'snow.png'
+		}
+		else if (condition == 'clear sky') {
+			img = 'sunny.png'
+		}
+
+		wxImg.src = '../imgs/wx-imgs/${img}'
+	}catch (error) {
+		console.error(error)
+	}
+}
+
+getWeather()
 
 const DateTime = new Date()
 const month = DateTime.getMonth()
