@@ -1,22 +1,24 @@
 const theJoke = document.querySelector(".output")
 const temp = document.querySelector(".temp")
+currentTemp = document.querySelector(".temp")
 const currentCondition = document.querySelector(".type")
 // const geoKey = document.querySelector("myprojects.geoapify.com/api/geoKey/keys")
-
- "2328c9ca79f34a98a61969796f0345b3"
-const jokeButton = document.querySelector(".joke-button")
-const url = 'https://dad-jokes-by-api-ninjas.p.rapidapi.com/v1/dadjokes';
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '83aa7e4915msha45fa05c01ec122p187bfajsn2e1e98827135',
-		'X-RapidAPI-Host': 'dad-jokes-by-api-ninjas.p.rapidapi.com'
-	}
-};
+"900b4b96ca474c8b59bd9bb846c16ba7"
+ 
+// const jokeButton = document.querySelector(".joke-button")
+// const dadUrl = 'https://dad-jokes-by-api-ninjas.p.rapidapi.com/v1/dadjokes';
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': '83aa7e4915msha45fa05c01ec122p187bfajsn2e1e98827135',
+// 		'X-RapidAPI-Host': 'dad-jokes-by-api-ninjas.p.rapidapi.com'
+// 	}
+// };
 
 const clouds = ['few clouds','scattered clouds','broken clouds','overcast clouds']
 const rain = ['shower rain','rain','mist']
-url=`https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={ "900b4b96ca474c8b59bd9bb846c16ba7"}`
+
+let url=`https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={"2328c9ca79f34a98a61969796f0345b3"}`
 let img 
 
 async function getWeather() {
