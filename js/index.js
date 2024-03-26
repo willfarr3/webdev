@@ -1,10 +1,27 @@
 const theJoke = document.querySelector(".output")
 const temp = document.querySelector(".temp")
+const headers = document.querySelector(".header")
 currentTemp = document.querySelector(".temp")
+const geoKey = '2328c9ca79f34a98a61969796f0345b3'
 const currentCondition = document.querySelector(".type")
-// const geoKey = document.querySelector("myprojects.geoapify.com/api/geoKey/keys")
+
+
+let geoUrl = 'myprojects.geoapify.com/api/geoKey/keys'
+async function getIp() {
+	try{
+		const geoResponse = await fetch(geoUrl)
+		const geoData = await geoResponse.json()
+		console.log(geoData,geoResponse)
+
+	}catch (error) {
+		console.error(error)
+	}
+}
+getIp()
+console.log(geoResponse)
+
 "900b4b96ca474c8b59bd9bb846c16ba7"
- 
+
 // const jokeButton = document.querySelector(".joke-button")
 // const dadUrl = 'https://dad-jokes-by-api-ninjas.p.rapidapi.com/v1/dadjokes';
 // const options = {
@@ -54,6 +71,38 @@ async function getWeather() {
 
 getWeather()
 
+
+async function getLocation() {
+	const geoUrl = `https://myprojects.geoapify.com/api/YmbNoZ88RgcaEI9GAxjm/keys =${geoKey}` 
+	try {
+		const geoResponse = await fetch(geoUrl)
+		const geoData = await geoResponse.json()
+		const lat = geoData.location.latitude
+		const lon = geoData.location.longitude
+		const coords = [lat,lon]
+		console.log(coords)
+		return coords
+	} catch (error) {
+		console.error(error)
+	}
+}
+
+
+
+async function getTime(coords) {
+	const la = coords[0]
+	const lo = coords[1]
+	const timeUrl = 'https://api-ninjas.com/profile'
+	const options = {
+		method: 'GET'
+		headers: {
+			'fN6sgSNJqEgZk/SQ99UwdQ==AZJGtfALV9nodRAj'
+		}
+	}
+}
+
+
+
 const DateTime = new Date()
 const month = DateTime.getMonth()
 const date = DateTime.getDate()
@@ -100,3 +149,6 @@ jokeButton.addEventListener('click', () =>{
 
 
 // https:api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
+getLocation()
+	.then(c => getTime(c))
+
