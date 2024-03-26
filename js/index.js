@@ -32,13 +32,16 @@ console.log(geoResponse)
 // 	}
 // };
 
-const clouds = ['few clouds','scattered clouds','broken clouds','overcast clouds']
-const rain = ['shower rain','rain','mist']
+
 
 let url=`https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={"2328c9ca79f34a98a61969796f0345b3"}`
 let img 
 
 async function getWeather() {
+	const la = coords[0]
+	const lo = coords[1]
+	const clouds = ['few clouds','scattered clouds','broken clouds','overcast clouds']
+	const rain = ['shower rain','rain','mist','light rain','moderate rain']
 	try{
 		const response = await fetch(url)
 		const data = await response.json()
@@ -150,5 +153,7 @@ jokeButton.addEventListener('click', () =>{
 
 // https:api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
 getLocation()
-	.then(c => getTime(c))
+.then(c => getTime(c))
 
+getLocation()
+	.then(c => getWeather(c))
